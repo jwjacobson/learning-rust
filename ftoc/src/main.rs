@@ -1,7 +1,8 @@
+// FtoC: convert Fahrenheit to Celsius, or vice versa
 use std::io;
 
 fn main() {
-    // Takes user input and converts it to Fahrenheit or Celsius
+    // Accepts user input and prints the resulting conversion
     let fahrenheit = convert_from_f();
 
     println!("What temperature should I convert?");
