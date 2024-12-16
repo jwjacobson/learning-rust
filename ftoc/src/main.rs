@@ -1,6 +1,7 @@
 use std::io;
 
 fn main() {
+    // Takes user input and converts it to Fahrenheit or Celsius
     let fahrenheit = convert_from_f();
 
     println!("What temperature should I convert?");
@@ -25,6 +26,7 @@ fn main() {
 }
 
 fn convert_from_f() -> bool {
+    // Returns true if converting from Fahrenheit, otherwise False 
     loop {
         println!("Convert from Fahrenheit or Celsius?");
         
@@ -52,9 +54,11 @@ fn convert_from_f() -> bool {
 }
 
 fn f_to_c(f: f32) -> f32   {
+    // Converts Fahrenheit to Celsius
     return (f - 32.0) * 5.0/9.0
 }
 
 fn c_to_f(c: f32) -> f32   {
+    // Converts Celsius to Fahrenheit
     return (c * 9.0/5.0) + 32.0
 }
